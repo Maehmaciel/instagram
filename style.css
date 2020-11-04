@@ -1,0 +1,130 @@
+
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration:none ;
+	font-family: sans-serif;
+	font-size: 14px;
+}
+
+body{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	background-color: #fafafa;
+	
+	
+}
+a{
+	font-weight: bold;
+}
+.instagram-wrapper{
+	display: flex;
+	align-items: center;
+	width: 50%;
+	justify-content: start;
+	height: 100vh;
+	
+}
+.phone{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+
+	
+}
+.phone img{
+	height: 40rem;
+}
+.continue{
+	
+	display: flex;
+    align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	min-height: 34rem;
+
+
+}
+.group{
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+    border: 1px solid #dbdbdb;
+    border-radius: 1px;
+	background-color: #FFF;
+	padding: 1.5rem 0;
+	width: 100%;
+}
+.group:nth-child(1){
+	min-height: 19rem;
+}
+.logo{
+	height: 3rem;
+}
+.profile{
+	border-radius: 50%;
+	display: flex;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+}
+.profile img{
+height: 6rem;
+}
+.link{
+	border: 0;
+	color: #0095f6;
+
+}
+.button{
+	color:#FFF;
+	background-color: #0095f6;
+	padding: 5px 20px;
+	border-radius: 3px;
+	
+}
+
+.get-app{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+.download{
+	display: flex;
+	width: 100%;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.app-download{
+	height: 3rem;
+	width: 10rem;
+	background-size: cover;
+	margin: 5px;
+}
+.app-download:nth-child(1){
+background-image: url('./img/google-play.png');
+}
+.app-download:nth-child(2){
+background-image: url('./img/app-store.png');
+}
+
+@media(max-width:1024px){
+	.instagram-wrapper{
+		width: 90%;
+	}
+}
+
+@media(max-width:760px){
+	.phone{
+		display: none;
+	}
+	.instagram-wrapper{
+		justify-content: center;
+	}
+}
